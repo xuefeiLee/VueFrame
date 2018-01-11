@@ -7,7 +7,7 @@
         {{item.label}}
       </li>
     </ul>
-    <button @click=" myTest('1')">我的测试</button>
+    <button @click=" myTest('1')">我的测ssssss试</button>
     <input v-model="msg" @keyup.enter="addView">
 
   </div>
