@@ -69,6 +69,7 @@
       },
       myTest: function (index) {
         console.log(index)
+        this.$layer.msg('no')
         console.log('对了')
       },
       addView: function () {
