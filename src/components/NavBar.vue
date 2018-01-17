@@ -52,7 +52,7 @@
             'index': '1'
           },
           {
-            'name': '排分',
+            'name': '菜单一',
             'path': 'RackPoint',
             'index': '2'
           },

@@ -8,7 +8,7 @@
             <div class="whiteFont">5</div>
           </div>
         </div>
-        <p class="imgHeaderBarFont">Steven<br><span class="fontSize">中再集团</span></p>
+        <p class="imgHeaderBarFont">Lee<br><span class="fontSize">我的首页</span></p>
       </div>
     </el-col>
 

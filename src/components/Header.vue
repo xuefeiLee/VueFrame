@@ -1,6 +1,6 @@
 <template>
     <div class="topHeader">
-        中天再保
+        Vue项目
       <router-link :to="{name:'Login'}">
         <button class="quitOut" v-on:click="quitProject()">退出</button>
       </router-link>
