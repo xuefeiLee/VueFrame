@@ -7,6 +7,10 @@
         {{item.label}}
       </li>
     </ul>
+    <h2>排序</h2>
+    <ul>
+      <li v-for="(i,index) in sortItem">{{index}}:{{i}}</li>
+    </ul>
     <button @click=" myTest('1')">我的测ssssss试</button>
     <div id="myChart" :style="{width: '300px', height: '300px'}"></div>
     <input v-model="msg" @keyup.enter="addView">
@@ -27,6 +31,7 @@
       // es6写法
       return {
         msg: 'hello vue',
+        items1: ['1', '34', '2', '78', '16', '98'],
         items: Store.fetch(),
         liClass: 'thisIsIiClass'
       }
@@ -41,6 +46,11 @@
       }
     },
     components: {
+    },
+    computed: {
+      sortItem: function () {
+        return this.items1.sort(this.sortNum)
+      }
     },
     mounted () {
       this.drawLine()
@@ -58,11 +68,14 @@
           },
           yAxis: {},
           series: [{
-            name: '销量',
+            name: '能量',
             type: 'bar',
             data: [5, 20, 36, 10, 10, 20]
           }]
         })
+      },
+      sortNum: function (a, b) {
+        return a - b
       },
       toggleFinsh: function (obj) {
         obj.isFinished = !obj.isFinished
